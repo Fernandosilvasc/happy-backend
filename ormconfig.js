@@ -4,6 +4,7 @@ module.exports = {
   entities: [`${process.env.ENTITIES_PATH}`],
   migrations: [`${process.env.MIGRATIONS_PATH}`],
   synchronize: false,
+  ssl: false,
   logging: true,
   cli: {
     migrationsDir: "./src/database/migrations",
