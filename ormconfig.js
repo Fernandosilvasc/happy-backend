@@ -5,6 +5,9 @@ module.exports = {
   migrations: [`${process.env.MIGRATIONS_PATH}`],
   synchronize: false,
   logging: true,
+  ssl: {
+    rejectUnauthorized: false
+  },
   cli: {
     migrationsDir: "./src/database/migrations",
   },
